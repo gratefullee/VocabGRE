@@ -14,3 +14,4 @@ To use it,
 2) Rename the file as 'manhattan1000.pdf' 
 3) run pip install PyMuPDF==1.18.15 on cmd. 
 4) run the python file. Keep learning! 
+(Every file has to be in the same directory!) 
