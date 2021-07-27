@@ -1,8 +1,18 @@
 import fitz # pip install PyMuPDF==1.18.15
 import numpy as np
 import os
+import sys
+from colorama import init
+init(strip=not sys.stdout.isatty()) # strip colors if stdout is redirected
+from termcolor import cprint  #pip install termcolor
+from pyfiglet import figlet_format
+
 
 os.system('clear')
+
+cprint(figlet_format('GRE Vocab!', font='starwars'),
+       'yellow', 'on_red', attrs=['bold'])
+
 
 # Convert PDF to String
 with fitz.open("manhattan1000.pdf") as doc:
@@ -39,9 +49,17 @@ vocab = {}
 for i,v in zip(words,meanings):
     vocab[i] = v
     
+try: 
+    first = int(input('Made by Grace, hleeabc@gmail.com\nWords are referred from Manhattan1000 GRE Vocab.\nInput the index of the first word. (1-995): '))-1
+except:
+    first = int(input('Made by Grace, hleeabc@gmail.com\nWords are referred from Manhattan1000 GRE Vocab.\nInput the index of the first word. (1-995): '))-1
 
-first = int(input('Input the index of the first word. (1-995): '))-1
-last = int(input('Input the index of the last word. (1-995). This number should be larger than the previous number: '))-1
+try: 
+    last = int(input('Input the index of the last word. (1-995). This number should be larger than the previous number: '))-1
+except: 
+    last = int(input('Input the index of the last word. (1-995). This number should be larger than the previous number: '))-1
+    
+
 learn_quiz = int(input('Input 1 for learning, 2 for spelling test: '))
 
 # Lists to a dictionary
