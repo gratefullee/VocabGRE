@@ -12,6 +12,6 @@ To use it,
 
 1) Download [Manhattan GRE 1000 Vocab list as a PDF file](https://corporate.lowes.com/sites/lowes-corp/files/2020-01/manhattan_prep_1000_gre_words_.pdf). 
 2) Rename the file as 'manhattan1000.pdf' 
-3) run pip install PyMuPDF==1.18.15 on cmd. 
+3) run pip install PyMuPDF==1.18.15  
 4) run the python file. Keep learning! 
 (Every file has to be in the same directory!) 
