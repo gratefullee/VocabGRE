@@ -1,5 +1,7 @@
 # VocabGRE
 
+![banner](banner.png)
+
 I've been looking for a suitable GRE vocab learning product for myself, but I didn't really like any.
 So I just made one for fun. It's nothing majestic but I just wanted to share. English is not my native language, so I tend to put extra work. I believe there are many people like me out there!
 
